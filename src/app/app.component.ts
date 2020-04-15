@@ -16,4 +16,9 @@ export class AppComponent  {
   }];
   itemArr = ['aa','bb','cc','dd'];
   show: boolean = true;
+
+  pesan = '';
+  EventKlik(){
+    this.pesan = "Tombol baru ditekan";
+  }
 }
