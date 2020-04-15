@@ -9,7 +9,8 @@
   <input [(ngModel)] = "a" type ="text">*
   <input [(ngModel)] = "b" type ="text">=
   {{a*b}}
-  <div>
-    {{ item.nama }} - {{item.harga}}
-  </div>
 </p>
+
+<div *ngFor="let barang of item; let i = index">
+  {{i + 1}}. {{ barang.nama }} - {{barang.harga|currency : Rp}}
+</div>
