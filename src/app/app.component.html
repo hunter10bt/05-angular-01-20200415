@@ -14,3 +14,10 @@
 <div *ngFor="let barang of item; let i = index">
   {{i + 1}}. {{ barang.nama }} - {{barang.harga|currency : Rp}}
 </div>
+
+<div *ngFor="let string of itemArr;">
+  {{string}}
+</div>
+
+<p *ngIf="show">This paragraph will be shown if the value of show is True</p>
+<p *ngIf="!show">This paragraph will be shown if the value of show is False</p>

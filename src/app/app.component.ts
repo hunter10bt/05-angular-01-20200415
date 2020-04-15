@@ -13,6 +13,7 @@ export class AppComponent  {
   },{
     nama : "Boneka",
     harga : 20000
-  }
-  ]
+  }];
+  itemArr = ['aa','bb','cc','dd'];
+  show: boolean = true;
 }
