@@ -21,3 +21,11 @@
 
 <p *ngIf="show">This paragraph will be shown if the value of show is True</p>
 <p *ngIf="!show">This paragraph will be shown if the value of show is False</p>
+
+<ng-template
+  *ngIf = "show; then showBlock; else notShowBlock">
+</ng-template>
+
+<ng-template #showBlock>This paragraph will be shown if the value of show is True</ng-template>
+
+<ng-template #notShowBlock>This paragraph will be shown if the value of show is False</ng-template>
